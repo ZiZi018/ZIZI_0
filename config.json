@@ -32,7 +32,7 @@
   "GENDER": "FEMALE",
   "nickNameBot": "AROHI-BOT",
   "authorFB": "Pore add kormu",
-  "prefix": "!",
+  "prefix": "-",
   "database": {
     "false": "mongodb",
     "autoSyncWhenStart": false,
