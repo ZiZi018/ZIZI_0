@@ -30,9 +30,9 @@
   "authorName": "SUZI",
   "AGE": "20",
   "GENDER": "FEMALE",
-  "nickNameBot": "AROHI-BOT",
+  "nickNameBot": "[ - ] 𝙰𝚛𝚘𝚑𝚒'𝚜 𝙱𝚘𝚝=/🩷🪽",
   "authorFB": "Pore add kormu",
-  "prefix": "-",
+  "prefix": ".",
   "database": {
 		"type": "sqlite",
 		"uriMongodb": "",
