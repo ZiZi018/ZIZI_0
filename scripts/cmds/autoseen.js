@@ -6,7 +6,7 @@ module.exports = {
 	name: "autoseen",
 	version: "1.0.0",
 	hasPermssion: 2,
-	author: "Jas",
+	author: "𝗠𝗮𝗵 𝗠𝗨𝗗 彡",
 	shortDescription: {
 			en: "Turn on/off automatically seen when new messages are available"
 		},
