@@ -18,19 +18,17 @@
   },
   "adminBot": [
     "61556006709662",
-    "100040138270035",
-    "100037951718438"
-    
-  ], 		
+    "100037951718438"    
+  ], 100078193001468		
     "whiteListMode": {
     "enable": false,
     "whiteListIds":[],
     "notes": "if you enable this feature, only the ids in the whiteListIds section can use the bot"
   },
   "authorName": "SUZI",
-  "AGE": "20",
+  "AGE": "17",
   "GENDER": "FEMALE",
-  "nickNameBot": "[ - ] 𝙰𝚛𝚘𝚑𝚒'𝚜 𝙱𝚘𝚝=/🩷🪽",
+  "nickNameBot": "[.] 𝙰𝚛𝚘𝚑𝚒'𝚜 𝙱𝚘𝚝=/🩷🪽",
   "authorFB": "Pore add kormu",
   "prefix": ".",
   "database": {
@@ -149,4 +147,4 @@
     "notes": "if you enable this feature, only the thread in the whiteListThreadIds list can use the bot",
     "how_it_work": "if you enable both whiteListMode and whiteListModeThread, the system will check if the user is in whiteListIds, then check if the thread is in whiteListThreadIds, if one of the conditions is true, the user can use the bot"
   }
-} 
+}
