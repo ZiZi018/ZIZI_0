@@ -1,4 +1,4 @@
-.cmd install bby.js const { GoatWrapper } = require("fca-liane-utils");
+ const { GoatWrapper } = require("fca-liane-utils");
 const axios = require("axios");
 const baseApiUrl = async () => {
   const base = await axios.get(
