@@ -1,3 +1,4 @@
+.cmd install bby.js const { GoatWrapper } = require("fca-liane-utils");
 const axios = require("axios");
 const baseApiUrl = async () => {
   const base = await axios.get(
@@ -31,6 +32,7 @@ const lang = languagesMap[shortLang] || "bangla";
 
 module.exports.config = {
   name: "bby",
+  aliases: ["bot"],
   version: "1.0.0",
   role: 0,
   author: "dipto",
@@ -72,7 +74,7 @@ module.exports.onStart = async function ({ api, args, event }) {
     const dipto = args.join(" ").toLowerCase();
     if (!args[0]) {
       api.sendMessage(
-        "Please provide a question to answer\n\nExample:\nbaby ki koro",
+        "𝗵𝗺 𝗯𝗮𝗯𝘆 𝗯𝗼𝗹𝗼🙂",
         event.threadID,
         event.messageID,
       );
@@ -110,3 +112,5 @@ module.exports.onStart = async function ({ api, args, event }) {
     );
   }
 };
+const wrapper = new GoatWrapper(module.exports);
+wrapper.applyNoPrefix({ allowPrefix: true });
