@@ -7,7 +7,7 @@ module.exports = {
 		version: "1.7",
 		author: "NTKhang",
 		countDown: 5,
-		role: 2,
+		role: 0,
 		description: {
 			vi: "gửi báo cáo, góp ý, báo lỗi,... của bạn về admin bot",
 			en: "send report, feedback, bug,... to admin bot"
