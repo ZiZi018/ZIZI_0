@@ -18,7 +18,7 @@
   },
   "adminBot": [
  "100078193001468", 
- "61556006709662"
+ 
 
  ], 		
     "whiteListMode": {
@@ -27,10 +27,10 @@
     "notes": "if you enable this feature, only the ids in the whiteListIds section can use the bot"
   },
   "authorName": "SUZI",
-  "AGE": "20",
+  "AGE": "16",
   "GENDER": "FEMALE",
   "nickNameBot": "[ . ]𝙰𝚛𝚘𝚑𝚒'𝚜 𝙱𝚘𝚝=/🩷🪽",
-  "authorFB": "Pore add kormu",
+  "authorFB": "https://www.facebook.com/profile.php?id=100078193001468&mibextid=ZbWKwL",
   "prefix": ".",
   "database": {
 		"type": "sqlite",
@@ -42,7 +42,7 @@
   "timeZone": "Asia/Dhaka",
   "credentials": {
     "gmailAccount": {
-      "email": "itsehan208@gmail.com",
+      "email": "mearohi25@gmail.com ",
       "clientId": "1021502973839-dargpljmbn9jtspsv9odndf3ehjkpghm.apps.googleusercontent.com",
       "clientSecret": "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",
       "refreshToken": "1//04an7sEWacfFbCgYIARAAGAQSNwF-L9IrSMcYxNsUH4oEQ-g1qmFCqWcLmKABoD5X3VGpdJFR_ADSuhnd_e_vAMOFnOBYzuG21R4",
