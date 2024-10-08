@@ -1,61 +1,63 @@
-const fs = require("fs");
-const path = require("path");
-const axios = require("axios");
- 
+ const axios = require('axios');
+
+const baseApiUrl = async () => {
+  const base = await axios.get(
+    `https://raw.githubusercontent.com/Blankid018/D1PT0/main/baseApiUrl.json`
+  );
+  return base.data.api;
+};
+
 module.exports = {
   config: {
     name: "art",
-    aliases: ['artify'],
-    author: "Mahi--",
-    version: "1.0",
-    cooldowns: 20,
+    version: "1.6.9",
+    author: "Nazrul",
     role: 0,
-    shortDescription: "Transform an image into art.",
-    longDescription: "Transforms an image into art using the provided image link or reply to an image.",
-    category: "fun",
-    guide: "{p}artify <image_url> or reply to an image with {p}artify",
+    description: "{pn} - Enhance your photos with artful transformations!",
+    category: "art",
+    countDown: 5,
+    guide: { 
+      en: "{pn} reply to an image"
+    }
   },
-  onStart: async function ({ message, args, api, event }) {
-    // Obfuscated author name check
-    const obfuscatedAuthor = String.fromCharCode(77, 97, 104, 105, 45, 45);
-    if (this.config.author !== obfuscatedAuthor) {
-      return api.sendMessage("You are not authorized to change the author name.", event.threadID, event.messageID);
-    }
- 
-    // Get image URL from arguments or replied message
-    let imageUrl;
-    if (args.length > 0) {
-      imageUrl = args[0];
-    } else if (event.messageReply && event.messageReply.attachments.length > 0) {
-      imageUrl = event.messageReply.attachments[0].url;
-    } else {
-      return api.sendMessage("❌ | You need to provide an image URL or reply to an image.", event.threadID);
-    }
- 
-    api.sendMessage("Please wait, we're transforming your image...", event.threadID, event.messageID);
- 
+  onStart: async function ({ message, event, args, api }) {
     try {
-      const artifyApiUrl = `https://samirxpikachuio.onrender.com/artify?url=${encodeURIComponent(imageUrl)}`;
- 
-      const artifyResponse = await axios.get(artifyApiUrl, {
-        responseType: "arraybuffer"
-      });
- 
-      const cacheFolderPath = path.join(__dirname, "cache");
-      if (!fs.existsSync(cacheFolderPath)) {
-        fs.mkdirSync(cacheFolderPath);
+      const cp = ["bal","zombie","anime","ghost", "watercolor", "sketch", "abstract", "cartoon","monster"];
+      const prompts = args[0] || cp[Math.floor(Math.random() * cp.length)];
+
+      const msg = await api.sendMessage("🎨 Processing your image, please wait...", event.threadID);
+
+      let photoUrl = "";
+
+      if (event.type === "message_reply" && event.messageReply?.attachments?.length > 0) {
+        photoUrl = event.messageReply.attachments[0].url;
+      } else if (args.length > 0) {
+        photoUrl = args.join(' ');
       }
-      const imagePath = path.join(cacheFolderPath, `${Date.now()}_artified_image.png`);
-      fs.writeFileSync(imagePath, Buffer.from(artifyResponse.data, "binary"));
- 
-      const stream = fs.createReadStream(imagePath);
-      message.reply({
-        body: "",
-        attachment: stream
-      });
+
+      if (!photoUrl) {
+        return api.sendMessage("🔰 Please reply to an image or provide a URL!", event.threadID, event.messageID);
+      }
+
+      const response = await axios.get(`${await baseApiUrl()}/art2?url=${encodeURIComponent(photoUrl)}&prompt=${encodeURIComponent(prompts)}`);
+
+      if (!response.data || !response.data.imageUrl) {
+        await api.sendMessage("⚠ Failed to return a valid image URL. Please try again.", event.threadID, event.messageID);
+        return;
+      }
+
+      const imageUrl = response.data.imageUrl;
+      await api.unsendMessage(msg.messageID);
+
+      const imageStream = await axios.get(imageUrl, { responseType: 'stream' });
+
+      await api.sendMessage({ 
+        body: `Here's your artful image! 🎨`, 
+        attachment: imageStream.data 
+      }, event.threadID, event.messageID);
+
     } catch (error) {
-      console.error("Error:", error);
-      message.reply("❌ | An error occurred. Please try again later.");
+      await api.sendMessage(`Error: ${error.message}`, event.threadID, event.messageID);
     }
   }
-                       }
+};
