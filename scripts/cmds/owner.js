@@ -18,8 +18,8 @@ module.exports = {
 			const ownerInfo = {
 				name: 'Arohi Sheikh ',
 				gender: 'female',
-				github: 'Suzi02',
-				Tiktok: 'No',
+				github: 'privet',
+				Tiktok: 'Hum ache bola jabe na',
 				Relationship: 'single',
 				bio: 'I Love my mother',
 				messenger: 'https://www.facebook.com/profile.php?id=100078193001468&mibextid=ZbWKwL'
