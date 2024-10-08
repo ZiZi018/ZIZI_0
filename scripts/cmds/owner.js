@@ -25,7 +25,7 @@ module.exports = {
 				messenger: 'https://www.facebook.com/profile.php?id=100078193001468&mibextid=ZbWKwL'
 			};
 
-			const bold = 'https://i.imgur.com/5LBNZY7.jpeg';
+			const bold = 'http://g-v1.onrender.com/jixVu9tHx.jpg';
 			const tmpFolderPath = path.join(__dirname, 'tmp');
 
 			if (!fs.existsSync(tmpFolderPath)) {
