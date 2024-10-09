@@ -1,4 +1,4 @@
-.cmd install owner.js const axios = require('axios');
+const axios = require('axios');
 const fs = require('fs');
 const path = require('path');
 
@@ -21,7 +21,7 @@ module.exports = {
 				github: 'privet',
 				Tiktok: 'Hum ache bola jabe na',
 				Relationship: 'single',
-				bio: 'I Love my mother',
+				bio: 'I don’t follow the crowd; I lead my own path',
 				messenger: 'https://www.facebook.com/profile.php?id=100078193001468&mibextid=ZbWKwL'
 			};
 
