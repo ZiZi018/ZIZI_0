@@ -1,4 +1,4 @@
-const axios = require('axios');
+.cmd install owner.js const axios = require('axios');
 const fs = require('fs');
 const path = require('path');
 
@@ -25,7 +25,7 @@ module.exports = {
 				messenger: 'https://www.facebook.com/profile.php?id=100078193001468&mibextid=ZbWKwL'
 			};
 
-			const bold = 'http://g-v1.onrender.com/R9N5w67Vy.jpg';
+			const bold = 'https://i.imgur.com/SI8wYfM.jpeg';
 			const tmpFolderPath = path.join(__dirname, 'tmp');
 
 			if (!fs.existsSync(tmpFolderPath)) {
