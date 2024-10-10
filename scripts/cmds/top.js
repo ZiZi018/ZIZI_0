@@ -1,5 +1,4 @@
-
- module.exports = {
+module.exports = {
  config: {
  name: "top",
  version: "1.0",
