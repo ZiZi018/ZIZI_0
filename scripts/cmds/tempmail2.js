@@ -2,7 +2,7 @@ const axios = require("axios");
 
 module.exports = {
   config: {
-    name: "tempmail",
+    name: "tempmail2",
     version: "1.0",
     author: "NTKhang",
     countDown: 5,
