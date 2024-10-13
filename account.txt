@@ -1,7 +1,7 @@
 [
 {
     "domain": ".facebook.com",
-    "expirationDate": 1760365453.310046,
+    "expirationDate": 1760366745.550052,
     "hostOnly": false,
     "httpOnly": false,
     "name": "c_user",
@@ -15,7 +15,7 @@
 },
 {
     "domain": ".facebook.com",
-    "expirationDate": 1763380217.078708,
+    "expirationDate": 1763390743.009805,
     "hostOnly": false,
     "httpOnly": true,
     "name": "datr",
@@ -29,7 +29,7 @@
 },
 {
     "domain": ".facebook.com",
-    "expirationDate": 1760365502,
+    "expirationDate": 1760366769,
     "hostOnly": false,
     "httpOnly": false,
     "name": "fbl_st",
@@ -38,12 +38,12 @@
     "secure": true,
     "session": false,
     "storeId": "0",
-    "value": "101623354%3BT%3A28813825",
+    "value": "101638787%3BT%3A28813846",
     "id": 3
 },
 {
     "domain": ".facebook.com",
-    "expirationDate": 1736605453.310368,
+    "expirationDate": 1736606745.550533,
     "hostOnly": false,
     "httpOnly": true,
     "name": "fr",
@@ -52,7 +52,7 @@
     "secure": true,
     "session": false,
     "storeId": "0",
-    "value": "06wcTRjgxHTIpSwnm.AWXIOOwawxE6RPi3vhAhJipm9gI.Bm_-tz..AAA.0.0.BnC9gK.AWUoPX-kN0Q",
+    "value": "06wcTRjgxHTIpSwnm.AWUELj_6-DfQunzLDQD_fXIhNI8.Bm_-tz..AAA.0.0.BnC90W.AWUA6GvAY6A",
     "id": 4
 },
 {
@@ -71,6 +71,19 @@
 },
 {
     "domain": ".facebook.com",
+    "hostOnly": false,
+    "httpOnly": false,
+    "name": "m_pixel_ratio",
+    "path": "/",
+    "sameSite": "unspecified",
+    "secure": true,
+    "session": true,
+    "storeId": "0",
+    "value": "2",
+    "id": 6
+},
+{
+    "domain": ".facebook.com",
     "expirationDate": 1762607986.99062,
     "hostOnly": false,
     "httpOnly": true,
@@ -81,7 +94,7 @@
     "session": false,
     "storeId": "0",
     "value": "v1",
-    "id": 6
+    "id": 7
 },
 {
     "domain": ".facebook.com",
@@ -95,7 +108,7 @@
     "session": false,
     "storeId": "0",
     "value": "1",
-    "id": 7
+    "id": 8
 },
 {
     "domain": ".facebook.com",
@@ -109,11 +122,11 @@
     "session": false,
     "storeId": "0",
     "value": "1",
-    "id": 8
+    "id": 9
 },
 {
     "domain": ".facebook.com",
-    "expirationDate": 1763389453.310462,
+    "expirationDate": 1763390745.550646,
     "hostOnly": false,
     "httpOnly": true,
     "name": "sb",
@@ -123,11 +136,11 @@
     "session": false,
     "storeId": "0",
     "value": "A93wZuLHZA_tVvRogTJj7h-t",
-    "id": 9
+    "id": 10
 },
 {
     "domain": ".facebook.com",
-    "expirationDate": 1734013502,
+    "expirationDate": 1734014769,
     "hostOnly": false,
     "httpOnly": false,
     "name": "vpd",
@@ -137,25 +150,24 @@
     "session": false,
     "storeId": "0",
     "value": "v1%3B662x360x2",
-    "id": 10
-},
-{
-    "domain": ".facebook.com",
-    "expirationDate": 1729434254,
-    "hostOnly": false,
-    "httpOnly": false,
-    "name": "wd",
-    "path": "/",
-    "sameSite": "lax",
-    "secure": true,
-    "session": false,
-    "storeId": "0",
-    "value": "360x662",
     "id": 11
 },
 {
     "domain": ".facebook.com",
-    "expirationDate": 1736605502,
+    "hostOnly": false,
+    "httpOnly": false,
+    "name": "wd",
+    "path": "/",
+    "sameSite": "unspecified",
+    "secure": true,
+    "session": true,
+    "storeId": "0",
+    "value": "360x806",
+    "id": 12
+},
+{
+    "domain": ".facebook.com",
+    "expirationDate": 1736606768,
     "hostOnly": false,
     "httpOnly": false,
     "name": "wl_cbv",
@@ -164,12 +176,12 @@
     "secure": true,
     "session": false,
     "storeId": "0",
-    "value": "v2%3Bclient_version%3A2645%3Btimestamp%3A1728829501",
-    "id": 12
+    "value": "v2%3Bclient_version%3A2645%3Btimestamp%3A1728830768",
+    "id": 13
 },
 {
     "domain": ".facebook.com",
-    "expirationDate": 1760365453.310544,
+    "expirationDate": 1760366745.550752,
     "hostOnly": false,
     "httpOnly": true,
     "name": "xs",
@@ -178,7 +190,7 @@
     "secure": true,
     "session": false,
     "storeId": "0",
-    "value": "16%3AtO1ZzzC_d_SxIw%3A2%3A1728829451%3A-1%3A7870",
-    "id": 13
+    "value": "33%3AZSKXH1b8yu5img%3A2%3A1728830742%3A-1%3A7870",
+    "id": 14
 }
 ]
