@@ -1,7 +1,7 @@
 [
 {
     "domain": ".facebook.com",
-    "expirationDate": 1760605373.340732,
+    "expirationDate": 1760606297.13777,
     "hostOnly": false,
     "httpOnly": false,
     "name": "c_user",
@@ -29,7 +29,7 @@
 },
 {
     "domain": ".facebook.com",
-    "expirationDate": 1760605545,
+    "expirationDate": 1760606670,
     "hostOnly": false,
     "httpOnly": false,
     "name": "fbl_st",
@@ -38,12 +38,12 @@
     "secure": true,
     "session": false,
     "storeId": "0",
-    "value": "100634161%3BT%3A28817825",
+    "value": "101533012%3BT%3A28817844",
     "id": 3
 },
 {
     "domain": ".facebook.com",
-    "expirationDate": 1736845373.340921,
+    "expirationDate": 1736846297.304817,
     "hostOnly": false,
     "httpOnly": true,
     "name": "fr",
@@ -52,7 +52,7 @@
     "secure": true,
     "session": false,
     "storeId": "0",
-    "value": "06wcTRjgxHTIpSwnm.AWUygLXuujDzwpVQMm_Hm6iXu40.Bm_-tz..AAA.0.0.BnD4E7.AWUPLg0BKUM",
+    "value": "06wcTRjgxHTIpSwnm.AWVMK4QkVA2JjUGnN6zGJz-ogFI.Bm_-tz..AAA.0.0.BnD4TZ.AWU6IMVE1ec",
     "id": 4
 },
 {
@@ -113,7 +113,7 @@
 },
 {
     "domain": ".facebook.com",
-    "expirationDate": 1763629373.341019,
+    "expirationDate": 1763630297.138252,
     "hostOnly": false,
     "httpOnly": true,
     "name": "sb",
@@ -127,7 +127,7 @@
 },
 {
     "domain": ".facebook.com",
-    "expirationDate": 1734253545,
+    "expirationDate": 1734254670,
     "hostOnly": false,
     "httpOnly": false,
     "name": "vpd",
@@ -141,7 +141,7 @@
 },
 {
     "domain": ".facebook.com",
-    "expirationDate": 1729674156,
+    "expirationDate": 1729675100,
     "hostOnly": false,
     "httpOnly": false,
     "name": "wd",
@@ -169,7 +169,7 @@
 },
 {
     "domain": ".facebook.com",
-    "expirationDate": 1760605373.341101,
+    "expirationDate": 1760606297.138335,
     "hostOnly": false,
     "httpOnly": true,
     "name": "xs",
@@ -178,7 +178,7 @@
     "secure": true,
     "session": false,
     "storeId": "0",
-    "value": "26%3A2vYucExdyA-j6w%3A2%3A1729069372%3A-1%3A-1",
+    "value": "25%3AxDgVl3s8hMbgjw%3A2%3A1729070296%3A-1%3A-1",
     "id": 13
 }
 ]
