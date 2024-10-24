@@ -8,7 +8,7 @@ module.exports = {
         name: "wish",
         aliases: ["bwish"],
         version: "1.0",
-        author: "Arohi",
+        author: "RUBISH",
         countDown: 5,
         role: 0,
         shortDescription: "Wish your friend ",
@@ -88,4 +88,4 @@ async function bal(mentionedUserId) {
 
     await img.writeAsync(pth);
     return pth;
-    }
+        }
