@@ -51,7 +51,7 @@ module.exports = {
 
           const names = categories[category].commands.sort();
           for (let i = 0; i < names.length; i += 3) {
-            const cmds = names.slice(i, i + 2).map((item) => `⭔${item}`);
+            const cmds = names.slice(i, i + 2).map((item) => `♡${item}`);
             msg += `\n│${cmds.join(" ".repeat(Math.max(1, 5 - cmds.join("").length)))}`;
           }
 
@@ -60,9 +60,9 @@ module.exports = {
       });
 
       const totalCommands = commands.size;
-      msg += `\n\n╭─────❃[𝗘𝗡𝗝𝗢𝗬]\n│>𝗧𝗢𝗧𝗔𝗟 𝗖𝗠𝗗𝗦: [${totalCommands}].\n│𝗧𝗬𝗣𝗘𝖳:[ ${prefix}𝗛𝗘𝗟𝗣 𝗧𝗢\n│<𝗖𝗠𝗗> 𝗧𝗢 𝗟𝗘𝗔𝗥𝗡 𝗧𝗛𝗘 𝗨𝗦𝗔𝗚𝗘.]\n╰────────────✦`;
+      msg += `\n\n╭─────❃[𝐄𝐍𝐉𝐎𝐘]\n│>𝐓𝐎𝐓𝐀𝐋 𝐂𝐌𝐃𝐒: [${totalCommands}].\n│𝐓𝐘𝐏𝐄:[ ${prefix}𝐇𝐄𝐋𝐏 𝐓𝐎\n│<𝐂𝐌𝐃> 𝐓𝐎 𝐋𝐄𝐀𝐑𝐍 𝐓𝐇𝐄 𝐔𝐒𝐀𝐆𝐄.]\n╰────────────✦`;
       msg += ``;
-      msg += `\n╭─────❃\n│🌟 | [𝗔𝗥𝗢𝗛𝗜]\n╰────────────✦`; // its not decoy so change it if you want 
+      msg += `\n╭─────❃\n│🦋 | [𝗔𝗥𝗢𝗛𝗜]\n╰────────────✦`; // its not decoy so change it if you want 
 
 
       await message.reply({
